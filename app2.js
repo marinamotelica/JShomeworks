@@ -42,6 +42,8 @@ console.log(daysToMars+"days it will take to the Mars");
 
 
 
+
+
  
 
 
