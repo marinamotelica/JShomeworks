@@ -96,4 +96,19 @@ function typeAngel(degree){
             }
 
             //Homework21
+
+            function separateArray (array,separator){ // [1,2,3]  *   "1*2*3"
+                        return array.join(separator)
+                        
+            }
+            console.log(separateArray([1,2,3],"*"))
+
+
+            function revers (value){
+                let typeOfValue = typeof(value)
+                if (typeOfValue==="string")
+                {
+                    let arrayFromString=
+                }
+            }
             
