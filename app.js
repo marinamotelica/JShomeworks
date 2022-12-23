@@ -51,3 +51,49 @@ function minusAction(){
 
 minusButton.addEventListener("click", minusAction)
 
+//Homework20
+function typeAngel(degree){
+    if ((degree > 0) && (degree < 90)){
+      return "Acute"
+      } else if (degree === 90){
+      return "Right"
+      } else if ((degree > 90)&& (degree < 180)){
+      return "Obtuse"
+      } else if (degree === 180){
+      return "Straight"
+      } else { return "is not a angel"}
+     
+    }
+    //typeAngel(179)
+
+    function checkType(value){ // 5
+        let typeOfValue = typeof(value) // "number"
+          switch(typeOfValue){ // "number"
+          case "number": return "number"
+            case "string": return "string"
+          case "boolean": return "boolean"
+          case "undefined": return "undefined"
+          case "object": return "null" // rypeof(null) => object
+        
+          }
+        }
+
+        function getPhonePrefixByCountry(contry){
+            switch(contry){
+              case "Moldova": return "+373"
+              case "Romania": return "+40"
+              case "Moldova": return "+373"
+              case "Moldova": return "+373"
+              case "Moldova": return "+373"
+              case "Moldova": return "+373"
+              case "Moldova": return "+373"
+              case "Moldova": return "+373"
+              case "Moldova": return "+373"
+              case "Moldova": return "+373"
+              case "Moldova": return "+373"
+            default: return "Unknown contry"
+              }
+            }
+
+            //Homework21
+            
