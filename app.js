@@ -131,3 +131,24 @@ function uniqNums(arrOfNums) {
 }
 
 console.log(uniqNums([1,2,1,4,5,1]))
+
+//homework22 number2
+function minMax(numbers) {
+    let min = numbers[0];
+    let max = numbers[0];
+  
+    for (let i = 1; i < numbers.length; i++) {
+      if (numbers[i] < min) {
+        min = numbers[i];
+      }
+      if (numbers[i] > max) {
+        max = numbers[i];
+      }
+    }
+  
+    return { min: min, max: max };
+  }
+  
+  let resultMinMax = minMax([1, 2, 3, 4, 5]);
+  console.log(`Minimum: ${resultMinMax.min}, Maximum: ${resultMinMax.max}`);
+
