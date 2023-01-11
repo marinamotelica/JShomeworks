@@ -152,3 +152,37 @@ function minMax(numbers) {
   let resultMinMax = minMax([1, 2, 3, 4, 5]);
   console.log(`Minimum: ${resultMinMax.min}, Maximum: ${resultMinMax.max}`);
 
+
+
+  //homework 23 nr4
+let form = document.getElementById("myForm");
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+        let field1 = document.getElementById("field1");
+        let field2 = document.getElementById("field2");
+        let field3 = document.getElementById("field3");
+        let field4 = document.getElementById("field4");
+        let field5 = document.getElementById("field5");
+        if (field1.value.trim() === "" || field2.value.trim() === "" || field3.value.trim() === "" || field4.value.trim() === "" || field5.value.trim() === "") {
+            alert("Please complete all fields before submitting the form.");
+            return;
+        }
+        form.submit();
+    });
+
+    //number 3
+    let button = document.getElementById("myButton");
+    let count = 0;
+    button.addEventListener("click", function () {
+        count++;
+        console.log("Button clicked " + count + " times");
+    });
+
+    
+
+
+
+
+
+
+
