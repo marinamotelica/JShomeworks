@@ -177,8 +177,37 @@ form.addEventListener("submit", function (event) {
         count++;
         console.log("Button clicked " + count + " times");
     });
-
+   //homework 24 nr1
+   const car = {
+    make: 'Toyota',
+    model: 'Camry',
+    year: 2020,
+    color: 'red',
+    start: function() {
+        console.log("The car is starting");
+    },
+    drive: function() {
+        console.log("The car is driving");
+    }
     
+};
+
+//homework 24 nr2
+const recipe = {
+    title: "Spaghetti and Meatballs",
+    servings: "4",
+    ingredients: ["1 kg spaghetti", "1 kg ground beef", "1 egg", "1/4 cup bread crumbs", "1/4 cup grated Parmesan cheese", "1/4 cup chopped parsley", "1 clove garlic, minced", "Salt and pepper", "1 can (28 oz) crushed tomatoes", "1/4 cup chopped basil"]
+};
+
+console.log("Title: " + recipe.title);
+console.log("Servings: " + recipe.servings);
+console.log("Ingredients: ");
+for (let i = 0; i < recipe.ingredients.length; i++) {
+    console.log(recipe.ingredients[i]);
+}
+
+
+
 
 
 
