@@ -205,6 +205,34 @@ console.log("Ingredients: ");
 for (let i = 0; i < recipe.ingredients.length; i++) {
     console.log(recipe.ingredients[i]);
 }
+//homework 26 nr1
+function getMonthName(date) {
+  const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+  ];
+  return monthNames[date.getMonth()];
+}
+let date = new Date();
+console.log(getMonthName(date));
+
+//homework 26 nr2
+function sameWeekday(date1, date2) {
+    return date1.getDay() === date2.getDay();
+}
+let date1 = new Date("January 8, 2021");
+let date2 = new Date("January 8, 2021");
+console.log(sameWeekday(date1, date2));
+
+//homework 26 nr5
+function getMinDate(dates) {
+    return new Date(Math.min(...dates.map(date => date.getTime())));
+}
+let dates = [new Date("January 1, 2023"), new Date("January 8, 2023"), new Date("January 5, 2023")];
+console.log(getMinDate(dates));
+
+
+
+
 
 
 
