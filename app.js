@@ -230,6 +230,12 @@ function getMinDate(dates) {
 let dates = [new Date("January 1, 2023"), new Date("January 8, 2023"), new Date("January 5, 2023")];
 console.log(getMinDate(dates));
 
+//clock
+setInterval(() => {
+    const currentDate = new Date();
+    document.getElementById("date").innerHTML = currentDate.toLocaleString();
+}, 1000);
+
 
 
 
