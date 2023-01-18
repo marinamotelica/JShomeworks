@@ -1,0 +1,9 @@
+#date {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: end;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+}
