@@ -237,6 +237,56 @@ setInterval(() => {
 }, 1000);
 
 
+//homework 28 nr1
+
+const userform = document.getElementById("user-registration-form");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
+const passwordConfirmInput = document.getElementById("password-confirm");
+
+userform.addEventListener("submit", e => {
+  e.preventDefault();
+
+  let hasErrors = false;
+
+  if (nameInput.value === "") {
+    nameInput.classList.add("red");
+    hasErrors = true;
+  } else {
+    nameInput.classList.remove("red");
+    nameInput.classList.add("green");
+  }
+
+  if (emailInput.value === "") {
+    emailInput.classList.add("red");
+    hasErrors = true;
+  } else {
+    emailInput.classList.remove("red");
+    emailInput.classList.add("green");
+  }
+
+  if (passwordInput.value === "" || passwordInput.value.length < 8) {
+    passwordInput.classList.add("red");
+    hasErrors = true;
+  } else {
+    passwordInput.classList.remove("red");
+    passwordInput.classList.add("green");
+  }
+
+  if (passwordConfirmInput.value !== passwordInput.value) {
+    passwordConfirmInput.classList.add("red");
+    hasErrors = true;
+  } else {
+    passwordConfirmInput.classList.remove("red");
+    passwordConfirmInput.classList.add("green");
+  }
+
+  
+  if (!hasErrors) {
+    userform.submit();
+  }
+});
 
 
 
